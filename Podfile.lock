@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.5.0)
+  - FlagKit (2.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - FlagKit
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FlagKit
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: e67a306bbf753cc021606660f573984aa7ccd0f4
+
+COCOAPODS: 1.11.2
