@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="84"/>
+            <point key="canvasLocation" x="149" y="84"/>
         </scene>
         <!--CountryVC-->
         <scene sceneID="Gia-zl-Zlt">
@@ -122,7 +122,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select preferred country / countries:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-n7-zYw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select country or upto 3 countries" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-n7-zYw">
                                 <rect key="frame" x="40" y="124" width="334" height="53"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -134,7 +134,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AWw-fn-6zn"/>
+                                    <outlet property="delegate" destination="0Nk-cS-8Ld" id="M3m-5P-Ag4"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aIU-gl-6QX">
@@ -185,8 +185,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="0Nk-cS-8Ld" id="OeS-vu-e5v"/>
-                                    <outlet property="delegate" destination="0Nk-cS-8Ld" id="h1w-ek-Obu"/>
+                                    <outlet property="dataSource" destination="0Nk-cS-8Ld" id="NJ4-tG-ReG"/>
+                                    <outlet property="delegate" destination="0Nk-cS-8Ld" id="1Fn-H4-Iie"/>
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vg-gD-5dL">
@@ -283,13 +283,13 @@
                         <outlet property="backBtn" destination="beH-QD-7pS" id="mBi-ED-sOy"/>
                         <outlet property="countryCv" destination="aIU-gl-6QX" id="AtO-re-Hya"/>
                         <outlet property="nextBtn" destination="BrP-fs-j4D" id="IRQ-fi-fnD"/>
-                        <outlet property="searchBar" destination="K4u-lB-CHM" id="gEY-Gu-N6u"/>
+                        <outlet property="searchBar" destination="K4u-lB-CHM" id="kXU-L1-u6C"/>
                         <segue destination="sZd-1d-IA7" kind="show" identifier="categorySegue" id="630-dC-bKi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgp-Jo-Ruc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.82608695652186" y="83.705357142857139"/>
+            <point key="canvasLocation" x="943" y="84"/>
         </scene>
         <!--CategoryVC-->
         <scene sceneID="vkY-Z9-VfC">
@@ -536,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6K-HW-7hD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521.739130434783" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2557" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9TW-kT-Mrd">

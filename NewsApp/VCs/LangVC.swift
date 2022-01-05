@@ -30,6 +30,7 @@ class LangVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
             isSearched = true
             let filter = langArr.filter { (($0["lang"] as! String).lowercased()).contains(searchBar.text!.lowercased()) }
             searchedArr = filter
+            print(searchedArr)
             languageCV.reloadData()
         }
         else
@@ -60,6 +61,7 @@ class LangVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
         cell.layer.cornerRadius = 15
     
         var partiDict = [String:String]()
+        
         if isSearched {
             partiDict = searchedArr[indexPath.row] as! [String: String]
         }
@@ -91,9 +93,14 @@ class LangVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
         
     }
 
+    //only one language can be chosen
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        LANG = langArr[indexPath.row]["abv"] as! String
         self.performSegue(withIdentifier: "countrySegue", sender: nil)
+        
     }
+    
 }
 
 

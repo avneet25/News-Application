@@ -13,17 +13,49 @@ class NewslistVC: UIViewController, UICollectionViewDataSource, UICollectionView
     
     
     @IBOutlet weak var newslistCV: UICollectionView!
-    
-    //mediastack api
-    let apiUrl = "http://api.mediastack.com/v1/news?access_key=c6c7e65871f05fc1874c423671d82ea0"
-    
-    //data to store the news articles produced on call
-    var data = [[String:Any]]()
+    var data = [[String:Any]]() //stores data from api call
+    var Categ = [String]() //stores category info from previous screen
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData()
+    }
 
+    func getData()
+    {
+        var codeStr = ""
+        var categStr = ""
+        
+        for str in CCODE {
+            codeStr.append(str)
+            if str != CCODE[CCODE.count - 1] {
+                codeStr.append(", ")
+            }
+        }
+        
+        for str in Categ {
+            categStr.append(str)
+            if str != Categ[Categ.count - 1] {
+                categStr.append(",")
+            }
+        }
+
+        
+        let apiUrl = "https://api.mediastack.com/v1/news ? access_key = 81efae3eed80c28474db53326873a31d & languages = \(LANG) & countries = \(codeStr) & categories = \(categStr)"
+        
+        AF.request(apiUrl).responseJSON { [self] result in
+            if let value = result.value as? [String:Any] {
+                print(value)
+                data = value["data"] as! [[String:Any]]
+               // cv.reloadData()
+        }
+            else {
+                print("error")
+            }
+        
+        
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

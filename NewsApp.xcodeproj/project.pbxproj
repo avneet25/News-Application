@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4636C6BA2783AA4800E07B2E /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4636C6B92783AA4800E07B2E /* countries.json */; };
 		463ED67C27838C2300C58014 /* CountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463ED67B27838C2300C58014 /* CountryVC.swift */; };
+		4673CFE62784C452001343D0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4673CFE52784C452001343D0 /* Constant.swift */; };
 		469F93DE2782317D00A5DA4C /* LangVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F93DD2782317D00A5DA4C /* LangVC.swift */; };
 		469F93E12782321200A5DA4C /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F93E02782321200A5DA4C /* CategoryVC.swift */; };
 		46EAA2FA2780B0E800654395 /* NewslistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAA2F92780B0E800654395 /* NewslistVC.swift */; };
@@ -23,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4636C6B92783AA4800E07B2E /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		463ED67B27838C2300C58014 /* CountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVC.swift; sourceTree = "<group>"; };
+		4673CFE52784C452001343D0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		469F93DD2782317D00A5DA4C /* LangVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangVC.swift; sourceTree = "<group>"; };
 		469F93E02782321200A5DA4C /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		46EAA2F92780B0E800654395 /* NewslistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewslistVC.swift; sourceTree = "<group>"; };
@@ -71,12 +71,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4636C6B627839FE100E07B2E /* Json */ = {
+		4673CFE42784C43B001343D0 /* constant file */ = {
 			isa = PBXGroup;
 			children = (
-				4636C6B92783AA4800E07B2E /* countries.json */,
+				4673CFE52784C452001343D0 /* Constant.swift */,
 			);
-			path = Json;
+			path = "constant file";
 			sourceTree = "<group>";
 		};
 		469F93DC2782314600A5DA4C /* VCs */ = {
@@ -119,7 +119,7 @@
 		46EAD5A1277BF5AD009D921C /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				4636C6B627839FE100E07B2E /* Json */,
+				4673CFE42784C43B001343D0 /* constant file */,
 				469F93DF278231EA00A5DA4C /* Cell */,
 				469F93DC2782314600A5DA4C /* VCs */,
 				46EAD5A2277BF5AD009D921C /* AppDelegate.swift */,
@@ -195,7 +195,6 @@
 			files = (
 				46EAD5B2277BF5AE009D921C /* LaunchScreen.storyboard in Resources */,
 				46EAD5AF277BF5AE009D921C /* Assets.xcassets in Resources */,
-				4636C6BA2783AA4800E07B2E /* countries.json in Resources */,
 				46EAD5AA277BF5AD009D921C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +250,7 @@
 			files = (
 				469F93E12782321200A5DA4C /* CategoryVC.swift in Sources */,
 				46EAD5BC277BFEA9009D921C /* CollectionViewCell.swift in Sources */,
+				4673CFE62784C452001343D0 /* Constant.swift in Sources */,
 				46EAA2FA2780B0E800654395 /* NewslistVC.swift in Sources */,
 				46EAD5A3277BF5AD009D921C /* AppDelegate.swift in Sources */,
 				46EAD5AD277BF5AD009D921C /* NewsApp.xcdatamodeld in Sources */,
