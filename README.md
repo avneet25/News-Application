@@ -9,7 +9,7 @@ NewsApp is an iOS mobile application designed to bring up-to-date news to the us
 # 🚩 Table of contents
 1. [App Screenshots](#part1)
 2. [Features and Libraries used](#part2)
-3. [Some Swift/Xcode Methods used in Development](#part3)
+3. [What I have Learnt](#part3)
 
 ## App Screenshots <a name="part1"></a>
 
@@ -26,10 +26,9 @@ NewsApp is an iOS mobile application designed to bring up-to-date news to the us
 
 ___
 
-## Some Swift/Xcode Methods used in Development <a name="part3"></a>
+## What I have Learnt <a name="part3"></a>
 
 * (array_name).filter [$0]
-* CollectionView
 * Data in JSON (Dictionaries and arrays)
 * Search bar delegates
 * override func prepare(for segue: ...) to pass data between screens
