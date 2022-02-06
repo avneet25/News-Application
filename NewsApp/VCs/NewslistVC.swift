@@ -15,7 +15,7 @@ class NewslistVC: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var newslistCV: UICollectionView!
     var data = [[String:Any]]() //stores data from api call
     var Categ = [String]() //stores category info from previous screen
-    
+    var ACCESS_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class NewslistVC: UIViewController, UICollectionViewDataSource, UICollectionView
         }
 
         
-        let apiUrl = "https://api.mediastack.com/v1/news ? access_key = 81efae3eed80c28474db53326873a31d & languages = \(LANG) & countries = \(codeStr) & categories = \(categStr)"
+        let apiUrl = "https://api.mediastack.com/v1/news ? access_key = \(ACCESS_KEY) & languages = \(LANG) & countries = \(codeStr) & categories = \(categStr)"
         
         AF.request(apiUrl).responseJSON { [self] result in
             if let value = result.value as? [String:Any] {
