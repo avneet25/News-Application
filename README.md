@@ -1,6 +1,6 @@
 
 # NewsApp
-(In Progress)
+A news apps providing various kinds of news with customizable options.
 
 # 🚩 Table of contents
 1. [App Screenshots](#part1)
